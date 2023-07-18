@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cricket Height</title>
+    <style>
+        .field img{
+            width: 200px;
+            height: 200px;
+        }
+        .field{
+            border: 1px solid steelblue;
+        }
+        .bat{
+            transition: transform 0.3s;
+        }
+        .field:hover .bat{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+        .field:hover .ball{
+            transform: translate(500px, -300px);
+        }
+        .ball{
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            left: 250px;
+            transition: transform 1s ease-out 0.3s;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="field">
+        <img src="https://img.freepik.com/premium-vector/cricket-bat_78370-428.jpg?w=2000" alt="" class="bat">
+        <div class="ball"></div>
+    </div>
 </body>
 </html>
