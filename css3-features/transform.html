@@ -5,9 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transform & Translate</title>
     <style>
+        body{
+            margin-left: 50px;
+        }
         .container, .inner{
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
+        }
+        .container{
+            border: 2px solid steelblue;
+            background: aquamarine;
+        }
+        .inner{
+            border: 2px solid brown;
+            background-color: palegoldenrod;
+            /* transform: scale(0.25, 0.5); */
+            /* transform: rotate(45deg); */
+            /* transform: scale(0.5) rotate(45deg) translateX(100px); */
+        }
+        .inner:hover{
+            transform: rotate(45deg);
         }
     </style>
 </head>
